@@ -1,0 +1,35 @@
+.header {
+    display: table;
+    background: #ffffff;
+    height: 68px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    z-index: 30;
+}
+
+.header__logo {
+    width: 140px;
+    display: table-cell;
+}
+
+.header__logo-image {
+    width: 140px;
+    height: 100%;
+    background: url("../images/logo.svg") 0 50% no-repeat;
+    background-size: contain;
+}
+
+.header-menu {
+
+}
+
+.header-menu__item {
+    height: 100%;
+    padding: 0 18px;
+    line-height: 68px;
+    vertical-align: middle;
+    font-size: 15px;
+    text-decoration: none;
+}
