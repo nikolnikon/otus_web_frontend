@@ -1,5 +1,7 @@
 .page {
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -17,7 +19,7 @@
 .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .menu__item {
@@ -62,11 +64,12 @@
 .footer {
     width: 100%;
     height: 110px;
-    position: fixed;
-    bottom: 0;
-    /*padding-top: 50px;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    padding-top: 50px;
     background: #ecf0f1;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    flex-shrink: 0;
 }
 
 .footer__container {
@@ -76,6 +79,7 @@
 
 .footer__row {
     margin: 10px 0;
+    align-items: center;
 }
 
 .footer__menu {
@@ -126,4 +130,35 @@
 .feature__description {
     margin-top: 5px;
     /*padding-top: 5px;*/
+}
+
+.courses-brief {
+    background-color: #ecf0f1;
+    padding: 20px 0;
+}
+
+.courses-brief__row {
+    justify-content: space-between;
+}
+
+.course-card {
+    width: 350px;
+    heigth: 445px;
+    background-color: #ffffff;
+}
+
+.course-card__content {
+    padding: 0 10px;
+}
+
+.course-card__start-date {
+    color: #a9aaad;
+}
+
+.course-card__extra-content {
+    padding: 0 10px 5px;
+}
+
+.course-card__extra-content_bold {
+    font-weight: bold;
 }
