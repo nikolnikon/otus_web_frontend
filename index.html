@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <title>Like OTUS</title>
 </head>
 <body class="page">
     <header class="header">
         <div class="container header__container">
-            <div class="header__logo">
-            <a class="header__logo-image" href="/"></a>
-        </div>
-        <nav class="header-menu">
-            <a class="menu__item">Курсы</a>
-            <a class="menu__item">Мероприятия</a>
-            <a class="menu__item">Обучение</a>
-            <a class="menu__item">Работа в компаниях</a>
-            <a class="menu__item">Компаниям</a>
-            <a class="menu__item">Блог</a>
-        </nav>
+            <div class="row">
+                <div class="header__logo">
+                    <a class="header__logo-image" href="/"></a>
+                </div>
+                <nav class="menu header__menu">
+                    <a class="menu__item">Курсы</a>
+                    <a class="menu__item">Мероприятия</a>
+                    <a class="menu__item">Обучение</a>
+                    <a class="menu__item">Работа в компаниях</a>
+                    <a class="menu__item">Компаниям</a>
+                    <a class="menu__item">Блог</a>
+                </nav>
+            </div>
         </div>
     </header>
     <div class="features page__features">
@@ -78,7 +81,7 @@
     </div>
     <div class="courses-brief">
         <div class="container">
-            <h2>Курсы, которые скоро начнутся</h2>
+            <h2>Скоро начнутся</h2>
             <div class="row courses-brief__row">
                 <div class="course-card">
                     <div class="course-card__image">
@@ -142,6 +145,25 @@
             </div>
         </div>
     </div>
+    <div class="employers">
+        <div class="container">
+            <h2>Нашим выпускникам предлагают работу</h2>
+            <div class="carousel" data-flickity='{ "cellSelector": ".carousel__cell", "pageDots": false, "cellAlign": "left", "wrapAround": true }'>
+                <div class="carousel__cell">
+                    <img src="images/employers/yandex.png"/>
+                </div>
+                <div class="carousel__cell">
+                    <img src="images/employers/data_art.png"/>
+                </div>
+                <div class="carousel__cell">
+                    <img src="images/employers/kaspersky.png"/>
+                </div>
+                <div class="carousel__cell">
+                    <img src="images/employers/mybook.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container footer__container">
             <div class="row footer__row">
@@ -156,10 +178,10 @@
                 </nav>
             </div>
             <div class="row footer__row">
-                <span>© 2015-2018 Like OTUS</span>
+                © 2015-2018 Like OTUS
             </div>
         </div>
-
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
