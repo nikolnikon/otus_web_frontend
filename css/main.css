@@ -10,7 +10,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -20,7 +20,6 @@
 .row {
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
 }
 
 .menu__item {
@@ -34,7 +33,6 @@
 }
 
 .header {
-    /*display: table;*/
     background: #ffffff;
     height: 68px;
     box-sizing: border-box;
@@ -45,9 +43,7 @@
 }
 
 .header__container {
-    display: table;
     width: 100%;
-    overflow: auto;
 }
 
 .header__logo {
@@ -78,17 +74,14 @@
 .footer__container {
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__row {
     margin: 10px 0;
     align-items: center;
-    /*height: 50px;*/
 }
 
 .footer__menu {
-    /*flex-grow: 1;*/
     margin: 0 auto;
 }
 
