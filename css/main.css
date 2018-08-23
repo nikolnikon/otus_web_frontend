@@ -1,8 +1,11 @@
+body {
+    margin: 0;
+}
+
 .page {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
 .page__features {
