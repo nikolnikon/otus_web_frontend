@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    background: #ecf0f1;
+    flex-shrink: 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__row {
+    margin: 10px 0;
+    align-items: center;
+}
+
+.footer__menu {
+    margin: 0 auto;
+}

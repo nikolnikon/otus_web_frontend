@@ -1,0 +1,28 @@
+#todo {'Попробовать объединить features и course-brief в один блок (  класс)'}
+
+
+.features {
+    border-bottom: 1px solid #d7d7d7;
+    /*height: 500px;*/
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-basis: 50%;
+}
+
+.feature__cell {
+    margin: 0 5px;
+}
+
+
+.feature__header {
+    margin: 0;
+}
+
+.feature__description {
+    margin-top: 5px;
+    /*padding-top: 5px;*/
+}
