@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
     <link type="text/css" href="css/main.css" rel="stylesheet"/>
     <link type="text/css" href="css/carousel.css" rel="stylesheet"/>
-    <link type="text/css" href="css/courses-brief.css" rel="stylesheet"/>
-    <link type="text/css" href="css/features.css" rel="stylesheet"/>
+    <link type="text/css" href="css/course-card.css" rel="stylesheet"/>
+    <link type="text/css" href="css/feature.css" rel="stylesheet"/>
     <link type="text/css" href="css/footer.css" rel="stylesheet"/>
     <link type="text/css" href="css/header.css" rel="stylesheet"/>
     <link type="text/css" href="css/menu.css" rel="stylesheet"/>
@@ -14,7 +14,7 @@
     <title>Like OTUS</title>
 </head>
 <body class="page">
-    <header class="header">
+    <header class="header page__header">
         <div class="container header__container">
             <div class="row">
                 <div class="header__logo">
@@ -31,7 +31,7 @@
             </div>
         </div>
     </header>
-    <div class="features page__features">
+    <div class="strip">
         <div class="container">
             <h2>Получите навыки для отличной карьеры в IT</h2>
             <div class="row">
@@ -86,10 +86,10 @@
             </div>
         </div>
     </div>
-    <div class="courses-brief">
+    <div class="strip strip_background_grey">
         <div class="container">
             <h2>Скоро начнутся</h2>
-            <div class="row courses-brief__row">
+            <div class="row row_justify_space-between">
                 <div class="course-card">
                     <div class="course-card__image">
                         <img src="https://via.placeholder.com/350x220/e8117f/ffffff"/>
@@ -152,7 +152,7 @@
             </div>
         </div>
     </div>
-    <div class="employers">
+    <div class="strip">
         <div class="container">
             <h2>Нашим выпускникам предлагают работу</h2>
             <div class="carousel" data-flickity='{ "cellSelector": ".carousel__cell", "pageDots": false, "cellAlign": "left", "wrapAround": true }'>

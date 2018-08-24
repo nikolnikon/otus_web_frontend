@@ -1,11 +1,3 @@
-#todo {'Попробовать объединить features и course-brief в один блок (  класс)'}
-
-
-.features {
-    border-bottom: 1px solid #d7d7d7;
-    /*height: 500px;*/
-}
-
 .feature {
     display: flex;
     flex-direction: row;
