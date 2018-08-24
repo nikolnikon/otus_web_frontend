@@ -42,3 +42,7 @@ body {
 .row_justify_space-between {
     justify-content: space-between;
 }
+
+.row_wrapped {
+    flex-wrap: wrap;
+}
