@@ -24,8 +24,6 @@ body {
 
 .container {
     max-width: 1170px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     /*overflow: hidden;*/
     height: 100%;
@@ -43,6 +41,14 @@ body {
     justify-content: space-between;
 }
 
+.row_justify_center {
+    justify-content: center;
+}
+
 .row_wrapped {
     flex-wrap: wrap;
+}
+
+.h_centered {
+    text-align: center;
 }

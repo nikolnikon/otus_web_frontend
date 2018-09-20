@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+    <link type="text/css" href="css/carousel.css" rel="stylesheet"/>
+    <link type="text/css" href="css/course-card.css" rel="stylesheet"/>
+    <link type="text/css" href="css/feature.css" rel="stylesheet"/>
+    <link type="text/css" href="css/footer.css" rel="stylesheet"/>
+    <link type="text/css" href="css/header.css" rel="stylesheet"/>
+    <link type="text/css" href="css/menu.css" rel="stylesheet"/>
+    <link type="text/css" href="css/social.css" rel="stylesheet"/>
+    <link type="text/css" href="css/logo.css" rel="stylesheet"/>
+    <link type="text/css" href="css/registration.css" rel="stylesheet"/>
+    <title>Регистрация. Like OTUS</title>
+</head>
+<body>
+    <div class="page">
+    <header class="header page__header">
+        <div class="container header__container">
+            <div class="row">
+                <div class="logo header__logo">
+                    <a class="logo__image" href="/"></a>
+                </div>
+                <nav class="menu header__menu">
+                    <a class="menu__item">Курсы</a>
+                    <a class="menu__item">Мероприятия</a>
+                    <a class="menu__item">Обучение</a>
+                    <a class="menu__item">Работа в компаниях</a>
+                    <a class="menu__item">Компаниям</a>
+                    <a class="menu__item">Блог</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="registration">
+            <div class="container">
+                <h1 class="h h_centered">Регистрация в Like OTUS</h1>
+                <div class="row row_justify_center">
+                    <div class="form registration__form">
+                        <form>
+                            <input
+                                type='hidden'
+                                name='csrfmiddlewaretoken'
+                                value='Ov6tBpqRxmLwobZelKvhulm7QkTq3HdhXiS2AttfzglQ5FY17wUPYMlWLVcyOqZm'
+                            />
+                            <div class="row row_justify_center">
+                                <div class="form__field form__field_full">
+                                    <label for="id_first_name" class="form__label form__label_bold">Имя</label>
+                                    <input
+                                        type="text"
+                                        name="first_name"
+                                        maxLength="30"
+                                        id="id_first_name"
+                                        value={user.first_name}
+                                        class="form__input form__input_size_large"
+                                    />
+                                </div>
+                                <div class="form__field form__field_full">
+                                    <label for="id_last_name" class="form__label form__label_bold">Фамилия</label>
+                                    <input
+                                        type="text"
+                                        name="last_name"
+                                        maxLength="150"
+                                        id="id_last_name"
+                                        value={user.last_name}
+                                        class="form__input form__input_size_large"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="row row_justify_center">
+                                <div class="form__field form__field_full">
+                                    <label for="id_username" class="form__label form__label_bold">Имя пользователя</label>
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        maxLength="150"
+                                        autoFocus
+                                        required
+                                        id="id_username"
+                                        value={user.username}
+                                        class="form__input form__input_size_large"
+                                    />
+                                </div>
+                                <div class="form__field form__field_full">
+                                    <label for="id_email" class="form__label form__label_bold">E-mail</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        required
+                                        id="id_email"
+                                        value={user.email}
+                                        class="form__input form__input_size_large"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="row row_justify_center">
+                                <div class="form__field form__field_full">
+                                    <label for="id_password1" class="form__label form__label_bold">Пароль</label>
+                                    <input
+                                        type="password"
+                                        name="password1"
+                                        required
+                                        id="id_password1"
+                                        value={user.password}
+                                        class="form__input form__input_size_large"
+                                    />
+                                </div>
+                                <div class="form__field form__field_full">
+                                    <label for="id_password2" class="form__label form__label_bold">Подтверждение пароля</label>
+                                    <input
+                                        type="password"
+                                        name="password2"
+                                        required
+                                        id="id_password2"
+                                        value={user.confirmed_password}
+                                        class="form__input form__input_size_large"
+                                    />
+                                </div>
+                            </div>
+                            <div class="row row_justify_center">
+                                <input
+                                    type="submit"
+                                    value="Начать обучение"
+                                    class="form__button"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
