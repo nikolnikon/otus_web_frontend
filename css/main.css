@@ -45,6 +45,7 @@ main {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .row_justify_space-between {
